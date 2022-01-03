@@ -6,7 +6,7 @@
     <script src="https://cdnjs. cloudflare. com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <meta charset="UTF-8">
-    <title>{% block titleblock %}  Blogs  {% endblock %}</title>
+    <title>{% block title_block %}  Blogs  {% endblock %}</title>
 </head>
 <body>
 <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
@@ -19,8 +19,11 @@
         </li>
     </ul>
 </nav>
-{% block Listblock %}
+<div class="container" style="padding-top: 20px">
+    {% block body_block %}
 
-{% endblock %}
+    {% endblock %}
+</div>
+
 </body>
 </html>
